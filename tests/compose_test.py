@@ -1,5 +1,4 @@
 import unittest
-from unittest.mock import MagicMock, ANY
 from pyredux import compose
 
 
