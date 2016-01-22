@@ -15,7 +15,7 @@ class RunTests(Command):
     @staticmethod
     def run():
         loader = unittest.TestLoader()
-        tests = loader.discover('tests', pattern='*_test.py', top_level_dir='.')
+        tests = loader.discover('test', pattern='*_test.py', top_level_dir='.')
         runner = unittest.TextTestRunner()
         results = runner.run(tests)
         sys.exit(0 if results.wasSuccessful() else 1)
@@ -33,4 +33,4 @@ setup(name='pyredux',
           # 'markdown',
       ],
       zip_safe=False,
-      cmdclass={'test': RunTests,},)
+      cmdclass={'test': RunTests},)

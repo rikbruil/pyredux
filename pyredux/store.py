@@ -1,5 +1,5 @@
 from pyredux.internal.store import Store
-from pyredux.internal.paramTypes import __INIT
+from pyredux.internal.params import __INIT
 
 
 def create(reducer, initial_state):

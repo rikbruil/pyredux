@@ -3,10 +3,10 @@ from pyredux import compose
 
 def apply(*middlewares):
 
-    def iterate(next):
+    def iterate(other):
 
-        def wrap(reducer, initialState):
-            store = next(reducer, initialState)
+        def wrap(reducer, initial_state):
+            store = other(reducer, initial_state)
             dispatch = store.dispatch
             api = {"dispatch": lambda action: dispatch(action),
                    "get_state": store.get_state}

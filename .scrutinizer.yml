@@ -1,0 +1,9 @@
+filter:
+    paths: ["pyredux/*"]
+    excluded_paths:
+        - 'test/*'
+
+tools:
+    pylint:
+        python_version: 3 # Possible values: 2, 3
+        config_file: '.pylintrc'
