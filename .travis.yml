@@ -5,8 +5,8 @@ python:
   - 3.5
 
 install:
-  - pip install --quiet -r requirements.txt
-  - pip install --quiet coveralls
+  - pip install -r requirements.txt
+  - pip install coveralls
 
 script: coverage run --source pyredux setup.py test
 
