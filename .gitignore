@@ -1,5 +1,6 @@
 # Files
 .DS_Store
+.python-version
 .coverage
 *.pyc
 *.egg-info

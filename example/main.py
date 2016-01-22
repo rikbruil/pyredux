@@ -1,5 +1,4 @@
 from pyredux.store import create
-from pyredux.middleware import apply
 
 state = 0
 
