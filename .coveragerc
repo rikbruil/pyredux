@@ -1,0 +1,11 @@
+[run]
+branch = True
+include =
+    pyredux/*
+    test/*
+
+[html]
+directory = build/html
+
+[xml]
+output = build/coverage.xml

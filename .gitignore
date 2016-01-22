@@ -1,0 +1,10 @@
+# Files
+.DS_Store
+.coverage
+*.pyc
+*.egg-info
+
+# Folders
+.idea/
+/dist/
+/build/

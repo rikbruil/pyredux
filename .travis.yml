@@ -1,0 +1,15 @@
+language: python
+
+python:
+  - 2.7
+  - 3.4
+  - 3.5
+
+install:
+  - pip install --quiet -r requirements.txt
+  - pip install --quiet coveralls
+
+script: coverage run --source pyredux setup.py test
+
+after_success:
+  - coveralls
